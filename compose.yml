@@ -20,9 +20,9 @@ services:
       - HOSTNAME=0.0.0.0
       - NUCLEUS_ENV=dev
       - NEXTAUTH_SECRET=foo
-      - NEXTAUTH_URL=http://localhost:3000
+      - NEXTAUTH_URL=https://neosync.000.cloud.syslae.com.br
       - NEOSYNC_API_BASE_URL=http://api:8080
-      - NEXT_PUBLIC_APP_BASE_URL=http://localhost:3000
+      - NEXT_PUBLIC_APP_BASE_URL=https://neosync.000.cloud.syslae.com.br
 
       - POSTHOG_KEY=phc_qju45RhNvCDwYVdRyUjtWuWsOmLFaQZi3fmztMBaJip
 
@@ -61,7 +61,7 @@ services:
       - HOST=0.0.0.0
       - PORT=8080
       - NUCLEUS_ENV=dev
-      - APP_BASEURL=http://localhost:3000
+      - APP_BASEURL=https://neosync.000.cloud.syslae.com.br
       - TEMPORAL_URL=temporal:7233
       - DB_AUTO_MIGRATE=true
       - DB_SCHEMA_DIR=/migrations
