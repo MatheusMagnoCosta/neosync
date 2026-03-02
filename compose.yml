@@ -14,8 +14,8 @@ services:
   app:
     container_name: neosync-app
     image: ghcr.io/nucleuscloud/neosync/app:latest
-    ports:
-      - 3000:3000
+    #ports:
+    #  - 3000:3000
     environment:
       - HOSTNAME=0.0.0.0
       - NUCLEUS_ENV=dev
@@ -54,8 +54,8 @@ services:
   api:
     container_name: neosync-api
     image: ghcr.io/nucleuscloud/neosync/api:latest
-    ports:
-      - 8080:8080
+    #ports:
+    #  - 8080:8080
     command: serve connect
     environment:
       - HOST=0.0.0.0
@@ -132,8 +132,8 @@ services:
   redis:
     container_name: neosync-redis
     image: redis:7.2.4
-    ports:
-      - 6379:6379
+   # ports:
+   #   - 6379:6379
     command: redis-server --save 20 1 --loglevel warning --requirepass foofar
     networks:
       - neosync-network
